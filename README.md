@@ -16,6 +16,7 @@ $csv = $csvFactory->load('./example.csv');
 var_dump($csv);
 ```
 
+```
 array(2) {
   [0]=>
   array(8) {
@@ -56,6 +57,7 @@ array(2) {
     string(8) "95649564"
   }
 }
+```
 
 ```php
 
@@ -65,6 +67,8 @@ $csvFactory->setType("asObject");
 $csv = $csvFactory->load('./example.csv');
 
 var_dump($csv);
+```
+
 ```
 array(2) {
   [0]=>
@@ -106,6 +110,7 @@ array(2) {
     string(8) "95649564"
   }
 }
+```
 
 ```php
 
@@ -138,6 +143,7 @@ foreach($csv as $address) {
 }
 ```
 
+```
 array(2) {
   [0]=>
   object(Address)#6 (8) {
@@ -179,3 +185,4 @@ array(2) {
   }
 }
 {"TransactionNumber":"100000001","Name":"Winnie The Pooh","Add1":"100 Cheesy Street","Add2":"","Town":"Sydney","Add4":"Queensland","Postcode":"3000","Telephone":"95649564"}{"TransactionNumber":"100000002","Name":"Tigger","Add1":"100 Pizza Road","Add2":"","Town":"Sydney","Add4":"Queensland","Postcode":"3000","Telephone":"95649564"}
+```
