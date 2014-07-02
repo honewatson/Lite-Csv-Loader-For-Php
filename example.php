@@ -35,10 +35,13 @@ class Address
 
 }
 
-// As objects
+// As objects from class
+
 $csvFactory->setType("Address");
 
 $csv = $csvFactory->load('./example.csv');
+
+var_dump($csv);
 
 foreach($csv as $address) {
     echo $address->toJson();
