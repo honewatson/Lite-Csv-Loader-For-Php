@@ -139,6 +139,7 @@ class Loader
     public function load($file)
     {
 
+        $this->headers = null;
         $csv = array_map(array($this, 'getRow'), file($file));
         array_shift($csv);
 
