@@ -10,7 +10,7 @@
 namespace Hone\Csv;
 
 
-class Loader
+class Loader implements Interfaces\Loader
 {
     /**
      * @var array
