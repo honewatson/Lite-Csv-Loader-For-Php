@@ -56,6 +56,19 @@ class Loader
     }
 
     /**
+     * @param string $delimiter
+     * @param string $enclosure
+     * @param string $escape
+     */
+    public function setFileAttributes($delimiter = ',', $enclosure = '"', $escape = "\\")
+    {
+
+        $this->delimiter = $delimiter;
+        $this->enclosure = $enclosure;
+        $this->escape = $escape;
+    }
+
+    /**
      * Sets the type of result to return for each csv row.  Could be an array, could be an object, could be a class
      * @param $type asArray|asObject|asClassnameHere
      */
