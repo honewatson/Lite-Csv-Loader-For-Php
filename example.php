@@ -1,8 +1,3 @@
-Lite Csv Loader For Php Hone.Csv
-================================
-
-
-```php
 <?php
 
 include "./autoload.php";
@@ -48,4 +43,3 @@ $csv = $csvFactory->load('./example.csv');
 foreach($csv as $address) {
     echo $address->toJson();
 }
-```
